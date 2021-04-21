@@ -1,0 +1,57 @@
+.copyright {
+    background-color: #e6e6e6;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        &_text {
+            color: #7a7a7a;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: right;
+            letter-spacing: 0.4px;
+            padding-top: 33px;
+            padding-bottom: 32px;
+        }
+
+        &_network {
+            display: flex;
+            justify-content: space-between;
+            width: 192px;
+            padding-top: 33px;
+            padding-bottom: 32px;
+        }
+
+        &_network-social {
+            width: 32px;
+            height: 32px;
+            background-color: #ffffff;
+            color: #b2b2b2;
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: #f16d7f;
+                color: #ffffff;
+            }
+
+            &:active {
+                background-color: #f16d7f;
+                color: #ffffff;
+            }
+
+            &:focus {
+                background-color: #f16d7f;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/*--------конец редакции FOOTER-------*/
+
+/* Конец стилизации INDEX главной страницы */

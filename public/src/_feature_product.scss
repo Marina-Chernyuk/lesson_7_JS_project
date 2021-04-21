@@ -1,0 +1,47 @@
+.feature__product  {
+    width: 100%;
+    background-color: rgba(34, 34, 36, 1);
+
+    &_mt-110 {
+        margin-top: 110px;
+    }
+}
+
+.feature__info {
+    display: grid; /*грид сетка*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    &_img {
+        padding-left: 160px;
+    }
+
+    &_img_pb-8 {
+        padding-bottom: 8px;
+    }
+
+    &_part {
+        margin-top: 89px;
+        margin-bottom: 114px;
+    }
+
+    &_title {
+        color: #fbfbfb;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.5px;
+        padding-top: 32px;
+        padding-bottom: 17px;
+    }
+
+    &_text {
+        color: #fbfbfb;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.35px;
+        text-align: justify;
+        padding-left: 24px;
+        padding-right: 24px;
+    }       
+}

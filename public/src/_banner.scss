@@ -1,0 +1,175 @@
+/*-----баннер из 4 блоков/фото-----*/
+
+.banner__block {
+    display: flex;
+
+    &-mb-100 {
+        margin-bottom: 100px;
+    }
+
+    &_column_mr-10 {
+        margin-right: 10px;
+    }
+
+    &_column_ml-10 {
+        margin-left: 10px;
+    }
+
+    &_card_mb-20  {
+        margin-bottom: 20px;
+    }
+
+    &_img {
+        display: block;
+    }
+
+    &_card {
+        display: flex;
+        position: relative;
+        transition: all 1.5s ; /*плавность*/
+        
+        &_text {
+            position: absolute;
+            margin-top: 26px;
+            background-color: #ffffff;
+            transition: all 1.5s; /*плавность*/
+
+            &:hover {/*переворот*/
+                transform: translateX(20px) rotate(360deg);
+            }
+        }
+
+        &_title {
+            color: #222222;
+            font-size: 18px;
+            font-weight: 700;
+            margin-left: 20px;
+            margin-top: 16px;
+            letter-spacing: 0.45px;
+            height: 18px;
+            text-transform: uppercase;
+        }
+
+        &_subtitle {
+            color: $sitecolor;
+            font-size: 30px;
+            margin: 4px 20px 30px 20px;
+            font-weight: bold;
+            letter-spacing: 0.45px;
+            height: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner__block {
+        width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .banner__block {
+        width: 740px;
+        margin: 0 auto;
+    }
+    .banner__block_column_mr-10 {
+        margin-right: 5px;
+    }
+    .banner__block_column_ml-10 {
+        margin-left: 5px;
+    }
+    .banner__block_card_mb-20 {
+        margin-bottom: 10px;
+    }
+    .banner__block_img {
+        width: 99%;
+    }
+    .banner__block_card_text {
+        margin-top: 12px;
+    }
+    .banner__block_card_title {
+        font-size: 16px;
+        margin: 10px 10px 0 10px;
+        height: 14px;
+    }
+    .banner__block_card_subtitle {
+        font-size: 20px;
+        margin: 4px 10px 20px 10px;
+        height: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .banner__block {
+        width: 540px;
+        display: grid;
+       /* margin: 0 auto;*/
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 50px;
+    }
+    .banner__block_card_mb-20 {
+        margin-bottom: 20px;
+    }
+    .banner__block_column_mr-10 {
+        margin-right: 0;
+    }
+    .banner__block_column_ml-10 {
+        margin-left: 0;
+    }
+    .banner__block_img {
+        width: 100%;
+    }
+    .banner__block_card_text {
+        margin-top: 26px;
+    }
+    .banner__block_card_title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 20px;
+        margin-top: 16px;
+        letter-spacing: 0.45px;
+        height: 18px;
+    }
+    .banner__block_card_subtitle {
+        font-size: 30px;
+        margin: 4px 20px 30px 20px;
+        font-weight: bold;
+        letter-spacing: 0.45px;
+        height: 18px;
+    }
+}
+@media (max-width: 576px) {
+    .banner__block {
+        width: auto;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .banner__block_card_text {
+        margin-top: 12px;
+    }
+    .banner__block_card_title {
+        font-size: 16px;
+        margin: 10px 10px 0 10px;
+        height: 14px;
+    }
+    .banner__block_card_subtitle {
+        font-size: 20px;
+        margin: 4px 10px 20px 10px;
+        height: 14px;
+    }
+}
+
+.banner__block_card_men:hover {
+     transform: translate(10px, 5px) scale(1.01); /*смещение блока*/
+ }
+.banner__block_card_accesories:hover {
+    transform: translate(10px, -5px) scale(1.01); /*смещение блока*/
+}
+.banner__block_card_women:hover {
+    transform: translate(-5px, 10px) scale(1.01); /*смещение блока*/
+}
+.banner__block_card_kids:hover {
+    transform: translate(-5px, -10px) scale(1.01); /*смещение блока*/
+}
+/*-------------------------------*/

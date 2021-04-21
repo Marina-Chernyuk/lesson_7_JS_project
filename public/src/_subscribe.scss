@@ -1,0 +1,213 @@
+ /*---------ПОДВАЛ-----------------*/
+/*------блок subscribe------------*/
+
+.subscribe {
+    background-size: cover;
+    background-image: url(../img/fon.png),url(../img/subscribe.png);   
+}
+
+.subscribe-mb-110 {
+    margin-bottom: 110px;
+}
+
+.subscribe__box {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 156px;
+}
+
+/*слайдер*/
+
+.subscribe__box_img {
+    width: 83px;
+    height: 83px;
+    border-radius: 83px;
+  /*  float: left; */
+    margin-right: 28px;
+}
+
+.subscribe__box_reviews {
+    height: 170px;
+    margin-left: 28px;
+}
+
+.slider {
+    height: 194px;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+    color: #222224;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.4px;
+}
+
+.subscribe__box_slides {
+   /* height: inherit;*/
+    opacity: 0;
+    position: absolute;
+  /*  width: inherit;*/
+    z-index: 0;
+    transform: scale(1);
+    transition: transform ease-in-out .1s, opacity ease-in-out .1s;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    text-align: left;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.subscribe__box_reviews > input {
+    display: none;
+}
+
+.controls {
+    position: absolute;
+    margin-left: 110px;
+    margin-top: -26px;
+    line-height: 15px;
+}
+
+.subscribe__box_reviews label {
+    width: 38px;
+    height: 4px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    background-color: #d6d6d6;
+
+}
+
+.subscribe__box_reviews label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+    background-color: rgba(241, 109, 127, 1);
+}
+
+.subscribe__box_reviews label:after {
+    content: " ";
+    display: block;
+    position: absolute;
+}
+
+.subscribe__box_text {
+    padding-bottom: 20px;
+    margin-top: -78px;
+    margin-left: 110px;
+    color: #222224;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    line-height: 22px;
+    font-style: italic;
+    text-align: justify; 
+}
+
+.subscribe__box_name {
+    margin-left: 110px;
+    color: #f16d7f;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    line-height: 18px;
+
+}
+
+.subscribe__box_text_address {
+    margin-left: 110px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    font-weight: bold;
+}
+/* слайдер*/
+
+.subscribe__mailing {
+    width: 390px;
+    margin-left: 150px;
+    justify-content: center;
+    position: relative;
+}
+
+.subscribe__mailing::before {
+    content: " ";
+    width: 1px;
+    height: 434px;
+    background-color: #e1e1e1;;
+    position: absolute;
+    bottom: 0;
+    top: -100px;
+    left: -90px;
+    right: 32px;
+}
+
+.subscribe__mailing_title {
+    text-align: center;
+    color: #222224;
+    font-size: 28px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding-top: 38px;
+    font-weight: 400;
+    padding-bottom: 6px;
+}
+
+.subscribe__mailing_text {
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.subscribe__mailing_email {
+    display: flex;
+    height: 46px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 46px;
+    outline: none;
+    border: none;
+}
+
+.text_email {
+    align-items: stretch;
+    width: 282px;
+    padding-left: 28px;
+    border-radius: 23px 0 0 23px;
+    color: #222224;
+    background-color: #e1e1e1;
+    padding-right: 148px;
+}
+
+.subscribe_button {
+    width: 104px;
+    align-items: stretch;
+    background-color: #f16d7f;
+    border-radius: 0 23px 23px 0;
+    color: #ffffff;
+    border: none;
+    padding: 0 20px 0 20px;
+}
+
+.subscribe_button,
+.text_email:hover {
+    outline: none;
+}
+
+.subscribe_button,
+.text_email:active {
+    outline: none;
+}

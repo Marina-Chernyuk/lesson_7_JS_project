@@ -1,0 +1,67 @@
+/*-------------блок PROMO-------*/
+
+.promo {
+    background-color: #e8e8e8;  
+}
+
+.promo-mb-100 {
+    margin-bottom: 100px;
+}
+
+
+.promo__content {
+    display: flex;
+    align-content: center;
+    background-image: url(../img/promo_man.png) ;
+    background-position: center -51px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.promo__content_title {
+    color: #222222;
+    font-weight: 900;
+    margin-top: 19%;
+    margin-bottom: 25%;
+    position: relative;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column; /*чтобы не использовать тег <br>*/    
+    text-transform: uppercase;
+    line-height: 1.1;
+    transition: all 1.5s; /*плавность*/
+
+    &:hover {
+        transform: scale(1.2); /*увеличение */
+    }
+}
+
+.promo__content_title::before {
+    content: " ";
+    display: block;
+    width: 12px;
+    background-color: #f16d7f;
+    position: absolute;
+    bottom: 7px;
+    top: 12px;
+    left: 0;
+    right: 0;
+}
+
+.promo__content_title_fz-big {
+    font-size: 60px;   
+}
+
+.promo__content_title_fz-small {
+    font-size: 40px;    
+}
+
+.promo__content_title_fw-400 {
+    font-weight: 400;
+}
+
+.promo__content_title_special {
+    color: #f16d7f;
+}
+
+/*----------------------------------*/

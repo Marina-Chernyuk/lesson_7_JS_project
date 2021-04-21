@@ -1,0 +1,44 @@
+/* ------- СТИЛИЗАЦИЯ NEW MENU ------- */
+.new__arrivals {
+    background-color: rgba(248, 243, 244, 1);
+
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+
+        &_text {
+            height: 18px;
+            width: 176px;
+            font-size: 24px;
+            font-weight: 900;
+            color: rgba(241, 109, 127, 1);
+            line-height: 20px;
+            padding: 65px 0 85px 0;
+            text-transform: uppercase;
+        }
+
+        &_bread-crumbs {
+            padding-top: 69px;
+            list-style: none;
+            width: 198px;
+            flex-direction: row;
+
+            &_link {
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(99, 99, 99, 1);
+                text-align: center;
+                text-transform: uppercase;
+
+                &:hover {
+                    font-weight: bold;
+                    color: rgba(241, 109, 127, 1);
+                }
+            }
+        }
+    }
+}
+
+/* конец стилизации new menu */
+
+/*--------------------------------*/

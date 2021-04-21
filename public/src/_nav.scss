@@ -1,0 +1,143 @@
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.nav__menu_a {
+    color: #222222;
+    position: relative;
+    display: flex;
+    border: 3px solid transparent;
+}
+
+.nav__menu_a:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.nav__menu_a:hover::before,
+.nav__menu_a:active::before {
+      content: " ";
+    display: block;
+    height: 3px;
+    background-color: #f16d7f;
+    position: absolute;
+    bottom: 0;
+    top: 43px;
+    left: -20px;
+    right: -20px;
+}
+
+.menu_slider {
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+}
+
+.menu_slider:hover .drop_men {
+    display: flex;
+    
+}
+
+.menu_slider:hover .drop_last {
+    display: flex;
+}
+
+.drop_men,
+.drop_last,
+.drop_browse {
+    display: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 1px;
+    padding: 12px 20px;
+    border: 2px solid #e8e8e8;
+    position: absolute;
+    z-index: 3;
+    text-transform: none;
+    justify-content: space-around;
+}
+
+.drop_men {
+    top: 38px;
+    left: -20px;
+    justify-content: space-around;  
+}
+
+.drop_flex_lh-29 {
+    line-height: 29px;
+}
+
+.drop_last {
+    top: -54px;
+    left: -183px; 
+    /* размещение вертикального меню справа */
+}
+
+.drop_flex {
+   /* float: left;*/
+    width: 234px;
+    margin-right: 44px;
+}
+
+.drop_flex:last-of-type {
+    margin-right: 0;
+}
+
+.drop_title {
+    font-size: 14px;
+    color: rgba(35, 35, 35, 1);
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.drop_ul {
+    list-style-type: none;
+}
+
+.drop_ul_2 {
+    list-style-type: none;
+    padding-bottom: 18px;
+}
+
+.drop_link {
+    font-size: 14px;
+    color: #646464;
+    text-align: left;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+}
+
+.drop_link:hover {
+    color: #f16d7f;
+}
+
+.drop_img {
+    padding-top: 15px;
+    width: 255px;
+    padding-right: 5px;
+    margin-left: -10px;
+}
+
+.drop_text {
+    width: 71px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-top: -64px;
+    padding-left: 156px;
+}
+
+/*------------------------------*/

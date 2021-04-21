@@ -1,0 +1,258 @@
+/*----- СТРАНИЦА CHECKOUT ---------- */
+
+.contacts-group {
+  margin-top: 56px;
+  margin-bottom: 93px;
+
+  &__block {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(232, 232, 232, 1);
+
+    &_summary {
+      padding-top: 34px;
+      padding-bottom: 23px;
+      list-style-type: none;
+      position: relative;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgba(34, 34, 34, 1);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.contacts-group__block_summary:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  /*это решение убирает подсветку у любых элементов(рамку) */
+}
+
+.contacts-group__block[open] > .contacts-group__block_summary::after {
+  content: none;
+}
+
+.contacts-group__block_summary::-webkit-details-marker {
+  display: none;
+  /*убрали маркер*/
+}
+
+.information_box {
+  padding-top: 9px;
+  margin-left: 35px;
+}
+
+.registration-form {
+  display: flex;
+
+  &__blank {
+    border: none;
+    margin-bottom: 79px;
+  }
+
+  &__registered-user {
+    margin-left: 290px;
+    border: none;
+  }
+
+  &__title {
+    font-size: 13px;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+
+  &__text {
+    padding-bottom: 34px;
+    font-size: 13px;
+    color: rgba(179, 178, 178, 1);
+    line-height: 20px;
+    text-align: left;
+
+    &_pb-15 {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__text_red {
+    padding-bottom: 39px;
+    color: rgba(255, 13, 13, 1);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    height: 12px;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 1);
+    line-height: 20px;
+    padding-left: 212px;
+    margin-top: -39px;
+  }
+
+  &__email-password {
+    margin-top: 1px;
+    margin-bottom: 23px;
+    height: 45px;
+    width: 390px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(234, 234, 234, 1);
+  }
+
+  &__email-password_title {
+    font-size: 13px;
+    color: rgba(255, 13, 13, 1);
+    line-height: 20px;
+    margin-bottom: 39px;
+  }
+
+  &__email-password:focus,
+  .log_in:focus {
+    outline: none !important;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+.check_1 {
+  padding-bottom: 18px;
+}
+
+.check_2 {
+  padding-bottom: 33px;
+}
+
+/* СОЗДАНИЕ И НАСТРОЙКА РАДИОКНОПКИ (checkbox)*/
+
+.check_1,
+.check_2 { /*редакция label*/
+
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 1);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.radio_input {
+  /*скрыли стандартную настройку элемента input*/
+  position: absolute;
+  /*убрали из потока*/
+  z-index: -1;
+  /*поместили его ниже существующих элементов*/
+  opacity: 0;
+  /*сделали его полностью прозрачным*/
+}
+
+/*создание поддельного чекбокса*/
+.radio_input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.radio_input + label::before {
+  content: '';
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(85, 85, 85, 1);
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  margin-right: 19px;
+
+  /*свойства ниже будут определять положение самого флажка (когда checkbox будет в состоянии checked)*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90% 90%;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.radio_input:checked + label::before {
+  border: 2px solid rgba(85, 85, 85, 1);
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url(../img/cek.png);
+}
+
+/* стили при наведении курсора на радио */
+.radio_input:not(:disabled):not(:checked) + label:hover::before {
+  border-color: rgba(179, 178, 178, 1);
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.radio_input:not(:disabled):active + label::before {
+  background-color: rgba(241, 109, 127, 1);
+  border-color: rgba(241, 109, 127, 1);
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.radio_input:focus + label::before {
+  box-shadow: 0 0 0 2px rgba(179, 178, 178, 1);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked (проверен) */
+.radio_input:focus:not(:checked) + label::before {
+  border-color: rgba(179, 178, 178, 1);
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled (отключенный) */
+.radio_input:disabled + label::before {
+  background-color: white;
+}
+/* конец стилизации чекбокса*/
+
+
+.continue {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(234, 234, 234, 1);
+  padding: 19px 53px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(74, 74, 74, 1);
+  text-transform: uppercase;
+}
+
+.star {
+  height: 6px;
+  width: 6px;
+  font-size: 17px;
+  color: rgba(255, 13, 13, 1);
+  line-height: 20px;
+}
+
+.log_in {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(234, 234, 234, 1);
+  padding: 19px 81px 19px 55px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(74, 74, 74, 1);
+  text-transform: uppercase;
+}
+
+.lorem {
+  text-align: justify;
+  padding-right: 50px;
+  padding-bottom: 10px;
+
+  &_text {
+     padding-bottom: 20px;
+  }
+}
+
+.example_img {
+  padding: 0 20px;
+}
+.example_text {
+  padding-left: 300px;
+  padding-right: 100px;
+  padding-bottom: 70px;
+  margin-top: -125px;
+  text-align: justify;
+}
+
+/*-------------------------------------*/

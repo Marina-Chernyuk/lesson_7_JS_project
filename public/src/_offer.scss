@@ -1,0 +1,90 @@
+/*-------блок OFFER for women-----*/
+
+.feature {
+    display: flex;
+    align-content: center;
+}
+
+.feature-mb-100 {
+    margin-bottom: 100px;
+}
+
+.feature__img {
+    background-image: url(../img/cteklo.png), url(../img/banner.png);
+    width: 68%;
+    filter: brightness(80%);
+}
+
+.feature__title {
+    padding: 146px 0 383px 39px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.feature__title_fz-big {
+    font-size: 54px;
+}
+
+.feature__special {
+    color: #f16d7f;
+}
+
+.feature__title_fz-small {
+    font-size: 34px;
+}
+
+.feature__information {
+    background-color: #222222;
+    width: 32%;
+    position: relative;
+}
+
+.feature__item {
+    margin: 58px 26px 0 32px;
+    position: absolute;
+    transition: all 1.5s;
+}
+
+.feature__item_mt-58 {
+    margin-top: 58px;
+}
+.feature__item_mt-200 {
+    margin-top: 210px;
+}
+
+.feature__item_mt-300 {
+    margin-top: 370px;
+}
+.feature__item:hover {
+    transform: scale(1.05); /*увеличение */
+}
+
+.feature__item_img {
+    margin: 0px 33px 0px 0px;
+}
+
+.feature__item_title {
+    padding-left: 79px;
+    margin-top: -34px;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.feature__item_text {
+    padding-left: 79px;
+    padding-top: 18px;
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.35px;
+}

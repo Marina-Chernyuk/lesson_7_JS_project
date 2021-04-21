@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/ee2ef8f203.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="app">
+    <header class="header center">
+        <a href="index.html" class="header__logo logo_site"><img class="logo_img" src="img/logo.png" alt="logo">
+            <span class="logo_site_text" >bran</span><span class="dd">d</span></a>
+            <filter-el></filter-el>
+        <div class="header__control">
+            <cart ref="cart"></cart>
+            <details class="header__control_button">
+                <summary class="header__control_button_summary">My Account</summary>
+                <div class="drop drop_browse">
+                    <div class="drop_flex">
+                        <ul class="drop_ul">
+                            <li><a href="#" class="drop_link">Deferred items</a></li>
+                            <li><a href="#" class="drop_link">Waiting list</a></li>
+                            <li><a href="#" class="drop_link">Favorite brand</a></li>
+                            <li><a href="#" class="drop_link">Notifications</a></li>
+                            <li><a href="#" class="drop_link">Purchases</a></li>
+                            <li><a href="#" class="drop_link">Returns</a></li>
+                            <li><a href="#" class="drop_link">Electronic receipts</a></li>
+                            <li><a href="#" class="drop_link">Appeals</a></li>
+                            <li><a href="#" class="drop_link">Questions about the product</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </details>
+        </div>
+    </header>
+    <!-------------------------навигация---------------------------------->
+    <nav class="center nav__menu">
+        <a href="index.html" class="nav__menu_a">Home </a>
+        <div class="menu_slider">
+            <a href="#" class="nav__menu_a">Man</a>
+            <div class="drop drop_men">
+                <div class="drop_flex drop_flex_lh-29">
+                    <h3 class="drop_title">Women</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                        <li><a href="#" class="drop_link">Blazers</a></li>
+                        <li><a href="#" class="drop_link">Denim</a></li>
+                        <li><a href="#" class="drop_link">Leggings/Pants</a></li>
+                        <li><a href="#" class="drop_link">Skirts/Shorts</a></li>
+                        <li><a href="#" class="drop_link">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="drop_flex">
+                    <h3 class="drop_title">Women</h3>
+                    <ul class="drop_ul_2">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                    </ul>
+                    <h3 class="drop_title">Women</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                    </ul>
+                </div>
+                <div class="drop_flex">
+                    <h3 class="drop_title">Women</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                    </ul>
+                    <div class="drop_img"><a href="#"><img class="drop_img" src="img/1802.png" alt="1802">
+                        <p class="drop_text">super sale!</p>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_slider">
+            <a href="#" class="nav__menu_a">Women</a>
+            <div class="drop drop_last">
+                <div class="drop_flex">
+                    <h3 class="drop_title">women</h3>
+                    <ul class="drop_ul_2">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                        <li><a href="#" class="drop_link">Blazers</a></li>
+                        <li><a href="#" class="drop_link">Denim</a></li>
+                        <li><a href="#" class="drop_link">Leggings/Pants</a></li>
+                        <li><a href="#" class="drop_link">Skirts/Shorts</a></li>
+                        <li><a href="#" class="drop_link">Accessories</a></li>
+                    </ul>
+                    <h3 class="drop_title">men</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Tees/Tank tops</a></li>
+                        <li><a href="#" class="drop_link">Shirts/Polos</a></li>
+                        <li><a href="#" class="drop_link">Sweaters</a></li>
+                        <li><a href="#" class="drop_link">Sweatshirts/Hoodies</a></li>
+                        <li><a href="#" class="drop_link">Blazers</a></li>
+                        <li><a href="#" class="drop_link">Jackets/vests</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="nav__menu_a">Kids</a>
+        <a href="#" class="nav__menu_a">Accoseriese</a>
+        <a href="#" class="nav__menu_a">Featured</a>
+        <a href="#" class="nav__menu_a">Hot Deals</a>
+    </nav>
+    <main>
+        <!---------------------------------------------------------------------------->
+        <section class="promo promo-mb-100">
+            <div class="center promo__content">
+                <h1 class="promo__content_title">
+                    <span class="promo__content_title_fz-big">the brand</span>
+                    <span class="promo__content_title_fz-small promo__content_title_fw-400">of luxerious <span class="promo__content_title_special">fashion </span></span>
+                </h1>
+            </div>
+        </section>
+        <!----------------------------- 4 блока --------------------------------------->
+        <section class="center banner__block banner__block-mb-100">
+            <div class="banner__block_column banner__block_column_mr-10">
+                <a href="#">
+                    <figure class="banner__block_card banner__block_card_mb-20 banner__block_card_men">
+                        <img class="banner__block_img" src="img/1130.png" alt="1130">
+                        <figcaption class="banner__block_card_text">
+                            <h4 class="banner__block_card_title">hot deal</h4>
+                            <h3 class="banner__block_card_subtitle">for men</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="banner__block_card banner__block_card_accesories">
+                        <img class="banner__block_img" src="img/1144.png" alt="1130">
+                        <figcaption class="banner__block_card_text">
+                            <h4 class="banner__block_card_title">luxirous &amp; trendy</h4>
+                            <h3 class="banner__block_card_subtitle">accesories</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="banner__block_column banner__block_column_ml-10">
+                <a href="single_page.html">
+                    <figure class="banner__block_card banner__block_card_mb-20 banner__block_card_women">
+                        <img class="banner__block_img" src="img/1136.png" alt="1136">
+                        <figcaption class="banner__block_card_text">
+                            <h4 class="banner__block_card_title">30% offer</h4>
+                            <h3 class="banner__block_card_subtitle">women</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="banner__block_card banner__block_card_kids">
+                        <img class="banner__block_img" src="img/1137.png" alt="1137">
+                        <figcaption class="banner__block_card_text">
+                            <h4 class="banner__block_card_title">new arrivals</h4>
+                            <h3 class="banner__block_card_subtitle">for kids</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------->
+        <!--<div class="product container">-->
+        <section class="center product__box product__box-mb-113">
+            <h3 class="product__box_title animation">Featured Items</h3>
+            <p class="product__box_subtitle animation">Shop for items based on what we featured in this week</p>
+                <products ref="products" class="product__box_all"></products>
+            <form action="#" class="product__box_form" ><button class="product__box_button">
+                Browse All Product&nbsp; &rarr;
+            </button ></form>
+        </section>
+
+    </main>
+    <!---------------блок OFFER for women---------------------------->
+    <section class="center feature feature-mb-100">
+        <div class="feature__img">
+            <h2 class="feature__title">
+                <span class="feature__title_fz-big animation">30% &nbsp;<span class="feature__special">offer</span></span>
+                <span class="feature__title_fz-small animation">for women</span>
+            </h2>
+        </div>
+        <div class="feature__information">
+            <article class="feature__item feature__item_mt-58"><img class="feature__item_img" src="img/avto.png" alt="avto">
+                <h4 class="feature__item_title">Free Delivery</h4>
+                <p class="feature__item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </article>
+            <article class="feature__item feature__item_mt-200"><img class="feature__item_img" src="img/proc.png" alt="proc">
+                <h4 class="feature__item_title">Sales &amp; discounts</h4>
+                <p class="feature__item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </article>
+            <article class="feature__item feature__item_mt-300"><img class="feature__item_img" src="img/korona.png" alt="korona">
+                <h4 class="feature__item_title">Quality assurance</h4>
+                <p class="feature__item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <!-----------------------subscribe-------------------------------->
+        <section class="subscribe subscribe-mb-110">
+            <article class="center subscribe__box">
+                <div class="subscribe__box_reviews">
+                    <input type="radio" name="point" id="slide1">
+                    <input type="radio" name="point" id="slide2" checked>
+                    <input type="radio" name="point" id="slide3">
+                    <div class="slider">
+                        <div class="subscribe__box_slides slide1">
+                            <img class="subscribe__box_img" src="img/lik.png" alt="lik">
+                            <p class="subscribe__box_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium. Aliquam
+                                condimentum mattis neque sed pretium”</p>
+                            <p class="subscribe__box_name">Bin Burhan</p>
+                            <p class="subscribe__box_text_address">Dhaka, Bd</p>
+                        </div>
+                        <div class="subscribe__box_slides slide2">
+                            <img class="subscribe__box_img" src="img/Marina_Chernyuk.jpeg" alt="Marina_Chernyuk">
+                            <p class="subscribe__box_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium. ”</p>
+                            <p class="subscribe__box_name">Marina Chernyuk</p>
+                            <p class="subscribe__box_text_address">Irkutsk, Ru</p>
+                        </div>
+                        <div class="subscribe__box_slides slide3"><img class="subscribe__box_img" src="img/Ivanov_Ivan.jpg" alt="Ivanov_Ivan">
+                            <p class="subscribe__box_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium. Aliquam
+                                condimentum mattis neque sed pretium. Vestibulum quis porttitor dui!”</p>
+                            <p class="subscribe__box_name">Ivanov Ivan</p>
+                            <p class="subscribe__box_text_address">Krasnoyarsk, Ru</p>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
+                <div class="subscribe__mailing">
+                    <h4 class="subscribe__mailing_title">subscribe</h4>
+                    <p class="subscribe__mailing_text">for our newletter and promotion</p>
+                    <form class="subscribe__mailing_email" action="#">
+                        <label>
+                            <input class="subscribe__mailing_email text_email" type="text" placeholder="Enter Your Email">
+                        </label>
+                        <button class="subscribe__mailing_email subscribe_button">Subscribe</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <!---------------------inform-------------------------------->
+        <section class="center footer">
+            <div class="footer__text">
+                <a href="index.html" class="footer__logo logo_site"><img class="logo_img" src="img/logo.png" alt="logo">
+                    <span class="logo_site_text">bran</span><span class="dd">d</span></a>
+                <p class="footer__paragraph_1">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p><br><br>
+                <p class="footer__paragraph_2">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
+            <nav class="footer__inform">
+                <h4 class="footer__inform_title">company</h4>
+                <ul class="footer__inform_ul">
+                    <li class="footer__inform_li"><a href="index.html" class="footer__inform_text">Home</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Shop</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">About</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">How It Works</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__inform">
+                <h4 class="footer__inform_title">information</h4>
+                <ul class="footer__inform_ul">
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Tearms &amp; Condition</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Privacy Policy</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">How to Buy</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">How to Sell</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Promotion</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__inform">
+                <h4 class="footer__inform_title">shop category</h4>
+                <ul class="footer__inform_ul">
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Men</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Women</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Child</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Apparel</a></li>
+                    <li class="footer__inform_li"><a href="#" class="footer__inform_text">Brows All</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-----------------copyright---------------------->
+        <section class="copyright">
+            <div class="center copyright__box">
+                <div class="copyright__box_text">&copy; 2021 Brand All Rights Reserved.</div>
+                <div class="copyright__box_network">
+                    <a href="#" class="copyright__box_network-social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="copyright__box_network-social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="copyright__box_network-social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="copyright__box_network-social"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="copyright__box_network-social"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <error ref="error"></error>
+</div>
+    <!--<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/ProductComponent.js"></script>
+<script src="js/CartComponent.js"></script>
+<script src="js/FilterComp.js"></script>
+<script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
