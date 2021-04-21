@@ -1,0 +1,2 @@
+# lesson_7_JS_project
+lesson_7_JS_project
